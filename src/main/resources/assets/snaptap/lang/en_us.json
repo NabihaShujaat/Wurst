@@ -1,0 +1,7 @@
+{
+  "text.snaptap.toggle": "Toggle SnapTap",
+  "text.snaptap.toggled": "Snap tap is %s",
+  "text.snaptap.enabled": "ON",
+  "text.snaptap.keystrokestoggle": "Toggle SnapTap Keystrokes",
+  "text.snaptap.toggledkeystokes": "Keystrokes is %s"
+}

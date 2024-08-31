@@ -1,41 +1,28 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "snaptapmc",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Snap Tap",
+	"description": "The last-pressed strafe key is activated instead of not strafing. AKA The controversial feature from Razer/Wooting keyboards for minecraft",
 	"authors": [
-		"Me!"
+		"betterclient"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/betterclient/snaptapmc"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
-	"environment": "*",
+	"icon": "assets/snaptap/icon.png",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
-		]
+		"main": ["io.github.betterclient.snaptap.SnapTap"]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
+		"snaptap.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.2",
+		"fabricloader": ">=0.14",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
